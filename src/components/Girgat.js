@@ -3,7 +3,7 @@ import TypistAnimate from './Typist';
 import { Link } from "react-router-dom";
 import useWebAnimations, { bounce} from "@wellyshen/use-web-animations";
 import TwoContainers from './twocontainers';
-import SingleLineGridList from './Swiper';
+import SwipeableTextMobileStepper from './Swiper';
 
 
 
@@ -23,16 +23,21 @@ export default function Girgat() {
   }, [ArrowMove]);
 
   return (
-    <div >
+    <div className="MainBody" >
       <br />
       <span>
+     
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h4 className="Hi">HI, WE AT GIRGAT.COM</h4>
       <h1 className="help">We're here to Make your &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
       <TypistAnimate />
-      </span>
+    
       <br />
       <br />
-      <span>
       <ul className="how-we-work" id="icon" ref={ArrowMove.ref}>
         <li>
           <Link style={{ textDecoration: "none" }} to="/Aboutus">
@@ -40,13 +45,15 @@ export default function Girgat() {
         </li>
       </ul>
       </span>
+      {/* <br />
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <SingleLineGridList /> 
+      <br /> */}
+        <span>
+      <SwipeableTextMobileStepper /> 
+      </span>
       
       
       {/* <span>

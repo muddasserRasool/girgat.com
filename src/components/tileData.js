@@ -12,7 +12,7 @@ import image11 from './Media/11.jpg';
 import image12 from './Media/12.jpg';
  
 
- const tileData = [
+ const tutorialSteps = [
   {
       img: image1,
       title: 'Image1',
@@ -78,5 +78,5 @@ import image12 from './Media/12.jpg';
   ];
 
   
-export default tileData
+export default tutorialSteps
  
