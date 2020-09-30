@@ -11,8 +11,10 @@
     "@wellyshen/use-web-animations": "^0.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-id-swiper": "^4.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-swipe-gallery": "^0.6.3",
     "react-typist": "^2.0.5"
   },
   "scripts": {
