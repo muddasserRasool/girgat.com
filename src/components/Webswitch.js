@@ -6,7 +6,7 @@ import Contactus from './Contactus';
 import Products from './Products';
 import PersistentDrawerRight from './MobileNavbar';
 import {GlobalMobile} from '../App.js';
-import GirgatPic from './Girgat.png';
+import GirgatPic from './Media/GirgatPic.png';
 
 
 
@@ -51,7 +51,7 @@ export default function Webswitch() {
       <div>
       <ul>
           <Link to="/">
-            <img width="100" height="62" src={GirgatPic} className="logo" alt="Junto Logo" />
+            <img width="120" height="170" src={GirgatPic} className="logo" alt="Junto Logo" />
           </Link>
         </ul>
 

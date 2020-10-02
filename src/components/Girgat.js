@@ -45,24 +45,13 @@ export default function Girgat() {
         </li>
       </ul>
       </span>
-      {/* <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br /> */}
+  
         <span>
       <SwipeableTextMobileStepper /> 
       </span>
       
       
-      {/* <span>
-      <br />
-      <br />
-        <img className="Pictures" src={Pic1} width="35%" height="35%" alt="1"/>
-      </span> */}
-      {/* <SwiperExample /> */}
-      
+   
       <br />
       <TwoContainers />
       <br />

@@ -111,7 +111,7 @@ export default function TwoContainers() {
                         <h1 style={{ color: "#18242A" }}>This is Example Text.</h1>
                         <br />
                         <h2 style={{ color: "#18242A" }}> This is Example Text.This is Example Text.  </h2>
-                        {!Readmore && <span><span style={{ color: "#91C691", textDecoration: "underline" }}>Start This Service</span> <span style={{ color: "#91C691" }}>&nbsp; &#10230;</span></span>}
+                        {!Readmore && <span><span style={{ color: "#91C691", textDecoration: "underline" }}>Read More.</span> <span style={{ color: "#91C691" }}>&nbsp; &#10230;</span></span>}
                         {Readmore && extraContent}
                     </Paper>
                 </Grid>
@@ -121,7 +121,7 @@ export default function TwoContainers() {
                         <h1 style={{ color: "#18242A" }}>This is Example Text.</h1>
                         <br />
                         <h2 style={{ color: "#18242A" }}>This is Example Text.This is Example Text. </h2>
-                        {!Readmore2 && <span><span style={{ color: "#91C691", textDecoration: "underline" }}>Start This Service</span> <span style={{ color: "#91C691" }}>&nbsp; &#10230;</span></span>}
+                        {!Readmore2 && <span><span style={{ color: "#91C691", textDecoration: "underline" }}>Read More.</span> <span style={{ color: "#91C691" }}>&nbsp; &#10230;</span></span>}
                         {Readmore2 && extraContent2}
                     </Paper>
                 </Grid>

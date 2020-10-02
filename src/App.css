@@ -16,6 +16,7 @@ body{
   z-index: 1;
   position: relative;
   position: fixed;
+  top: -4%;
 
 }
 

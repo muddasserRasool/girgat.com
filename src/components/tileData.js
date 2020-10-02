@@ -1,7 +1,7 @@
 import image1 from './Media/1.jpg';
 import image2 from './Media/2.jpg';
 import image3 from './Media/3.jpg';
-import image4 from './Media/4.jpg';
+// import image4 from './Media/4.jpg';
 import image5 from './Media/5.jpg';
 import image6 from './Media/6.jpg';
 import image7 from './Media/7.jpg';
@@ -28,11 +28,11 @@ import image12 from './Media/12.jpg';
         title: 'Image3',
         author: 'author3',
       },
-      {
-        img: image4,
-        title: 'Image4',
-        author: 'author4',
-      },
+    //   {
+    //     img: image4,
+    //     title: 'Image4',
+    //     author: 'author4',
+    //   },
       {
         img: image5,
         title: 'Image5',
