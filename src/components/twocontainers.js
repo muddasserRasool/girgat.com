@@ -2,7 +2,7 @@ import React, { useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import useWebAnimations, { fadeInUp, slideInLeft } from "@wellyshen/use-web-animations";
+import useWebAnimations, { fadeInUp } from "@wellyshen/use-web-animations";
 import '../App.css';
 
 
@@ -41,7 +41,7 @@ export default function TwoContainers() {
 
         e1.addEventListener("mouseenter", (e) => {
             setReadmore(true)
-            Smoothin.animate({ ...slideInLeft })
+            Smoothin.animate({ ...fadeInUp })
     
         })
         e1.addEventListener("mouseleave", (e) => {
@@ -65,8 +65,8 @@ export default function TwoContainers() {
 
 
 
-    const extraContent = <div style={{zIndex:"-30"}} ref={Smoothin.ref} >
-        <p >
+    const extraContent = <div className="containerAddOn" ref={Smoothin.ref} >
+        <p className="extra-content">
             This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.
     </p>
         <ul>
@@ -84,7 +84,7 @@ export default function TwoContainers() {
     </div>
 
 
-    const extraContent2 = <div className="containerAddOn2" ref={Smoothin2.ref} style={{zIndex:"-30"}}>
+    const extraContent2 = <div className="containerAddOn2" ref={Smoothin2.ref}>
         <p className="extra-content">
         This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.
     </p>

@@ -68,7 +68,7 @@ function SwipeableTextMobileStepper() {
         enableMouseEvents
       >
         {tutorialSteps.map((step, index) => (
-          <div style={{zIndex:"-30"}} key={step.alt}>
+          <div key={step.alt}>
             {Math.abs(activeStep - index) <= 2 ? (
               <img className={classes.img}  src={step.img} alt={step.alt} />
             ) : null}
