@@ -24,13 +24,13 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    zIndex:2,
+    
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
-      zIndex: 4
+      
     }),
   },
   appBarShift: {
@@ -40,20 +40,20 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
     marginRight: drawerWidth,
-    zIndex: 4
+    
   },
   title: {
     flexGrow: 1,
-    zIndex: 4
+   
   },
   hide: {
     display: 'none',
-    zIndex: 4
+    
   },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    zIndex: 4
+    
   },
   drawerPaper: {
     width: drawerWidth,

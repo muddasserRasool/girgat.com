@@ -51,7 +51,7 @@ export default function Webswitch() {
       <div>
       <ul>
           <Link to="/">
-            <img width="120" height="170" src={GirgatPic} className="logo" alt="Junto Logo" />
+            <img width="100" height="140" src={GirgatPic} className="logo" alt="Junto Logo" />
           </Link>
         </ul>
 
