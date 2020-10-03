@@ -18,6 +18,7 @@ export default function Girgat() {
   useEffect(() => {
     const e1 = document.getElementById("icon");
     e1.addEventListener("mouseenter", (e) => {
+      e.preventDefault();
       ArrowMove.animate({...bounce});
     });
   }, [ArrowMove]);
