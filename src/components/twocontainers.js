@@ -2,7 +2,7 @@ import React, { useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import useWebAnimations, { fadeInUp } from "@wellyshen/use-web-animations";
+import useWebAnimations, { fadeInUp, slideInLeft } from "@wellyshen/use-web-animations";
 import '../App.css';
 
 
@@ -41,7 +41,7 @@ export default function TwoContainers() {
 
         e1.addEventListener("mouseenter", (e) => {
             setReadmore(true)
-            Smoothin.animate({ ...fadeInUp })
+            Smoothin.animate({ ...slideInLeft })
     
         })
         e1.addEventListener("mouseleave", (e) => {
@@ -65,8 +65,8 @@ export default function TwoContainers() {
 
 
 
-    const extraContent = <div className="containerAddOn" ref={Smoothin.ref}>
-        <p className="extra-content">
+    const extraContent = <div style={{zIndex:"-30"}} ref={Smoothin.ref} >
+        <p >
             This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.
     </p>
         <ul>
@@ -84,7 +84,7 @@ export default function TwoContainers() {
     </div>
 
 
-    const extraContent2 = <div className="containerAddOn2" ref={Smoothin2.ref}>
+    const extraContent2 = <div className="containerAddOn2" ref={Smoothin2.ref} style={{zIndex:"-30"}}>
         <p className="extra-content">
         This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.This is Example Text.
     </p>
@@ -103,7 +103,7 @@ export default function TwoContainers() {
     </div>
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} >
             <Grid container spacing={3} style={{ width: "100%", margin: "0px", padding: "0px" }}>
                 <Grid item xs={12} sm={6} id="container1" ref={Makebigger.ref}  >
                     <Paper className={classes.paper} >
@@ -115,8 +115,8 @@ export default function TwoContainers() {
                         {Readmore && extraContent}
                     </Paper>
                 </Grid>
-                <Grid item xs={12} sm={6} id="container2" ref={Makebigger2.ref}>
-                    <Paper className={classes.paper}>
+                <Grid item xs={12} sm={6} id="container2" ref={Makebigger2.ref} >
+                    <Paper className={classes.paper} >
                         <h5 style={{ color: "#91C691" }}>This is Example Text.</h5>
                         <h1 style={{ color: "#18242A" }}>This is Example Text.</h1>
                         <br />

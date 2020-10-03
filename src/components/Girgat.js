@@ -40,13 +40,13 @@ export default function Girgat() {
       <br />
       <ul className="how-we-work" id="icon" ref={ArrowMove.ref}>
         <li>
-          <Link style={{ textDecoration: "none" }} to="/Aboutus">
-            <span  className="Newbutton">Lets Get in Contact! </span></Link>
+          <Link style={{ textDecoration: "none", zIndex:"-2" }} to="/Aboutus">
+            <span  style={{zIndex:"-30"}} className="Newbutton">Lets Get in Contact! </span></Link>
         </li>
       </ul>
       </span>
   
-        <span>
+        <span style={{zIndex:"-30"}}>
       <SwipeableTextMobileStepper /> 
       </span>
       
